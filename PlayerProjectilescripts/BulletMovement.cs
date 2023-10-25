@@ -19,17 +19,6 @@ public class BulletMovement : MonoBehaviour
     void Update()
     {
         Physics2D.IgnoreLayerCollision(3, 3);
-        //GameObject[] projectiles = GameObject.FindGameObjectsWithTag("Projectile");
-        //print(projectiles[0]);
-        //if (projectiles[0] != null)
-        //
-        //{
-        //    
-        //    for (int i = 0; i < projectiles.Length; i++)
-        //    {
-        //        Physics2D.IgnoreCollision(projectiles[i].GetComponent<Collider2D>(), GetComponent<Collider2D>());
-        //    }
-        //}
         rb.MovePosition(rb.position + movement * bullet_speed * Time.fixedDeltaTime);
         
     }
